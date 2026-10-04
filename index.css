@@ -1,17 +1,15 @@
-/* Hele nettsiden */
+/* Hele siden */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: white;
-    color: #222;
-    line-height: 1.6;
+    background-color: beige;
+    color: black;
 }
 
 /* Header */
 .site-header {
-    background-color: #111;
+    background-color: darkslategray;
     color: white;
-    padding-bottom: 30px;
 }
 
 /* Navigasjon - Flexbox */
@@ -19,45 +17,40 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
-    background-color: #990000;
+    gap: 20px;
+    background-color: black;
     padding: 15px;
 }
 
 .main-nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    padding: 8px;
 }
 
 .main-nav a:hover {
-    color: #d4af37;
+    background-color: yellowgreen;
+    color: black;
 }
 
-/* Introduksjon - Flexbox */
+/* Intro - Flexbox */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px;
 }
 
 .hero h1 {
+    color: yellowgreen;
     font-size: 36px;
-    margin: 10px 0;
-    color: #d4af37;
-}
-
-.hero p {
-    margin: 5px;
 }
 
 .hero img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-    border: 3px solid #d4af37;
+    border: 3px solid yellowgreen;
 }
 
 /* Hovedinnhold */
@@ -67,108 +60,92 @@ main {
     padding: 20px;
 }
 
-/* Seksjoner */
+/* Innholdsbokser */
 section {
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #cccccc;
+    border: 2px solid darkseagreen;
 }
 
 h2 {
-    color: #990000;
-    border-bottom: 2px solid #d4af37;
-    padding-bottom: 5px;
-}
-
-h3 {
-    color: #333;
-}
-
-/* Lister */
-ul {
-    padding-left: 25px;
+    color: darkslategray;
+    border-bottom: 2px solid yellowgreen;
 }
 
 li {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
-/* Kontaktskjema - Flexbox */
+/* Skjema - Flexbox */
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-
-label {
-    font-weight: bold;
+    gap: 10px;
+    background-color: honeydew;
+    padding: 15px;
+    border: 1px solid darkseagreen;
 }
 
 input,
 textarea {
     padding: 10px;
-    border: 1px solid #999;
+    border: 1px solid gray;
     font-size: 16px;
-    font-family: Arial, sans-serif;
 }
 
-/* Når man trykker på et felt */
 input:focus,
 textarea:focus {
-    border: 2px solid #d4af37;
+    border: 2px solid yellowgreen;
     outline: none;
 }
 
-/* Send-knapp */
+/* Knapp */
 button {
-    background-color: #990000;
+    background-color: darkslategray;
     color: white;
+    padding: 10px;
     border: none;
-    padding: 10px 15px;
     font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
 button:hover {
-    background-color: #d4af37;
+    background-color: yellowgreen;
     color: black;
 }
 
-/* Back to the top */
+/* Back to the top - Flexbox */
 .back-to-top {
-    text-align: center;
-    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
 }
 
 .back-to-top a {
-    background-color: #990000;
+    background-color: black;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     text-decoration: none;
-    border: 2px solid #990000;
 }
 
 .back-to-top a:hover {
-    background-color: white;
-    color: #990000;
+    background-color: yellowgreen;
+    color: black;
 }
 
 /* Footer */
 footer {
-    background-color: #111;
+    background-color: darkslategray;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
-/* Tilpasser siden til mindre skjermer */
+/* Mobil */
 @media (max-width: 600px) {
     .main-nav {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .hero h1 {
@@ -177,9 +154,5 @@ footer {
 
     main {
         padding: 10px;
-    }
-
-    section {
-        padding: 15px;
     }
 }
